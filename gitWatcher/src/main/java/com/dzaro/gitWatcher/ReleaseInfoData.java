@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ReleaseInfoData {
 
-	String name;
+	private String name;
 
 	public String getName() {
 		return name;
@@ -17,8 +17,6 @@ public class ReleaseInfoData {
 
 	@Override
 	public String toString() {
-		return "Release{" +
-				"name='" + name + '\'' +
-				'}';
+		return "Release version name: " + name;
 	}
 }
