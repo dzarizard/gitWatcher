@@ -1,4 +1,4 @@
-package com.dzaro.gitWatcher;
+package com.dzaro.gitWatcher.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -13,10 +13,5 @@ public class ReleaseInfoData {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	@Override
-	public String toString() {
-		return "Release version name: " + name;
 	}
 }
